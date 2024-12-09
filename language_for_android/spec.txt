@@ -1,0 +1,16 @@
+single word = 4 byte
+upper 2bytes: category
+lower 2bytes: index
+
+category:
+0000: number
+0001: logical relation
+008x: reality
+0080: taxonomy(kingdom>division>class)
+0081: subdivision of taxonomy
+0081: concepts
+0082: nations
+
+eg) 0081cafe(concept[0xcafe]:language), 0082babe(nations[0xbabe]:kenya) > language of kenya
+eg) 00001234, 00005678 > 0x12345678
+eg) 0080dead(taxonomy:Eukaryota.Animalia.Chordata.Mammalia), 0081beef(subdivision of taxonomy(in context of Eukaryota.Animalia.Chordata.Mammalia)[0xbeef]: ./Lagomorpha.Leporidae) > rabbit in taxonomy

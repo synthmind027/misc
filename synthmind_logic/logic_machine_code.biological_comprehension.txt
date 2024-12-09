@@ -1,0 +1,101 @@
+# truth.machine_code_x86_64
+
+
+
+.registers:
+RAX, RBX, RCX, RDX is register
+RIP, RSP, RBP, RSI, RDI is register
+
+
+
+
+.modRM.F2B:
+This is first two bit.
+
+
+
+
+.modRM.arg1.register.REX_0:
+<--
+[RAX], [RCX], [RDX], [RBX], [sib], [RIP+32], [RSI], [RDI],
+[RAX+8], [RCX+8], [RDX+8], [RBX+8], [sib+8], [RBP+8], [RSI+8], [RDI+8],
+[RAX+32], [RCX+32], [RDX+32], [RBX+32], [sib+32], [RBP+32], [RSI+32], [RDI+32],
+RAX, RCX, RDX, RBX, RSP, RBP, RSI, RDI
+-->
+
+.modRM.arg1.register.REX_B:
+<--
+[R8], [R9], [R10], [R11], [sib], [RIP+32], [R14], [R15],
+[R8+8], [R9+8], [R10+8], [R11+8], [sib+8], [R13+8], [R14+8], [R15+8],
+[R8+32], [R9+32], [R10+32], [R11+32], [sib+32], [R13+32], [R14+32], [R15+32],
+R8, R9, R10, R11, RSP, R13, R14, R15
+-->
+
+.modRM.arg2.register.REX_0:
+<--
+RAX, RCX, RDX, RBX, RSP, RBP, RSI, RDI
+-->
+
+.modRM.arg2.register.REX_R:
+<--
+R8, R9, R10, R11, R12, R13, R14, R15
+-->
+
+
+.modRM.flag_prefix:
+<--
+40 to 4F(REX.):
+0, B, X, XB, R, RB, RX, RXB, W, WB, WX, WXB, WR, WRB, WRX, WRXB
+-->
+
+
+
+
+
+.arith32.function_by_offset:
+<--
+00 to 07
+m8:r8, m64:r64, r8:m8, r64:m64, AL:imm8, AX:imm32, none, none
+-->
+
+.arith32.base:
+<--
+00 to 38 by 08 (00, 08, 10, 18...)
+ADD, OR, ADC, SBB, AND, SUB, XOR, CMP
+-->
+
+.arith.imms:
+80/0: m8:imm8
+81/0: m64:imm32
+83/0: r64:imm8
+
+
+
+
+.branch.function_by_offset:
+<--
+0 to f:
+JO, JNO, JB, JNB, JZ, JNZ, JBE JNBE, JS, JNS, JP, JNP, JL, JNL, JLE, JNLE
+-->
+
+.branch.mnemonic.abbreviation:
+<--
+Overflow, Below, Above, Equal, Carry, Zero(ZF=1), Sign, Parity even(PF=1), Less(SF=0F), Greater(SF!=0F) 
+-->
+
+.branch.mnemonic.synonym:
+<--
+B NAE C
+Z E
+L NGE
+LE NG
+-->
+
+.branch.base:
+offset of branch.rel8: 70 (JMP not included)
+offset of branch.rel32: 0F80
+JMP 32: E9
+JMP 8: EB
+JMP m32: FF/4
+JMP m64: FF/5
+JMPF m64: FF/6

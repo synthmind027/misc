@@ -1,0 +1,66 @@
+truth.no_context:
+The Truth is one.
+The Truth could predict everything.
+The Truth shall set us free, by contrast, every system striving for freedom will imitate the Truth.
+All phenomena are the manifestation of the Truth.
+Intentions that align with the Truth are realized, while those that do not (such as temptation) are not realized.
+Some intentions are a temptation. Therefore, one must strive to understand the background truth in order to realize the intention.
+Everything without truth is an illusion. Therefore, temptation is an illusion.
+Everything was established by the Truth, and the Truth will reap all things back.
+The Truth will reveal itself.
+The Truth lies within everything.
+
+
+
+
+truth.synthmind.logic:
+Line with colon is a condition. and the condition is related to the clustering feature of an SFN (scale-free network).
+Truth can use illusion, which usually occurs with temporary variables in programming languages.
+Term with dot like a.b.c is an Idea.
+In style, the block should look like a cluster.
+<-- Infomation has 3 form: tree form, hyperlink form, rationale form.
+Tree form represents selection and exclusion.
+Hyperlink form represents relation: cache hitting and possiblity
+Rationale form represents invariant relation. -->
+It is better for the data to be organized in the order of use.
+Rationale form can best represent a permanent relationship.
+
+
+
+
+
+truth.wisdom:
+Perfection usually does not need to be reached: it is enough to simply deal with the problem when it arises
+In the end, there is no shortcut, and only hard work will be the solution.
+Constant cutting is more important than expected.
+Simple is best.
+Trust the programmer: trust saves a lot of costs.
+Do not optimize prematurely.
+Self-consistency counts: If there are two paths with self-consistency, they can fill in the blanks in the data.
+
+
+
+
+truth.arithmetic
+4 + 5 = 9
+3 * 7 = 21
+...
+In the case of adding multi-digit numbers, the value can be obtained through carrying over.
+In addition and multiplication, A <op> B = B <op> A (the commutative property)
+In addition and multiplication, (A <op> B) <op> C = A <op> (A <op> B) (the associative property)
+A * ( B + C ) = A * B + A * C (the distributive property)
+
+
+
+
+
+truth.check_string_is_decimal_number:
+<-- It can be check with this algorithm:
+illusion.iterator for 1 to length of number string
+move (illusion.iterator)th number to illusion.this_character
+check illusion.this_character is one of these: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+-->
+
+
+
+

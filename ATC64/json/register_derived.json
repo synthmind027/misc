@@ -1,0 +1,19 @@
+{
+  {
+    "data_name": "text: Full list of x64 registers",
+    "data": "RAX RCX RDX RBX RSP RBP RSI RDI"
+  },
+  {
+    "data_name": "list: Full list of x64 registers",
+    "data": [
+      "RAX",
+      "RCX",
+      "RDX",
+      "RBX",
+      "RSP",
+      "RSI",
+      "RDI"
+    ]
+  },
+  "FNSETPM":  "real mode to protected mode"
+}
